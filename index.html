@@ -47,8 +47,13 @@
         </div>
 
         <div class="form-group form-control-sm">
-          <label for="walletAddressInput">Your LiteSend URL</label>
-          <input type="text" class="form-control" id="URL" placeholder="Enter your wallet address to begin..." readonly="readonly">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button id="shortenURL" class="btn btn-secondary" type="button">Shorten</button>
+            </span>
+            <label for="walletAddressInput">Your LiteSend URL</label>
+            <input type="text" class="form-control" id="URL" placeholder="Enter your wallet address to begin..." readonly="readonly">
+          </div>          
         </div>
 
       </main>
