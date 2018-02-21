@@ -8,6 +8,7 @@ $(document).ready(function() {
 		var url = new URL(urlString);
 
 		$('#URL').val(url.href);
+		console.log(url.href)
 	}
 	$('input').on('input', function() {
 		updateAddress();
