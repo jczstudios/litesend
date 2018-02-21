@@ -7,13 +7,13 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Cover Template for Bootstrap</title>
+    <title>LiteSend</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap-4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
   </head>
 
   <body class="text-center">
@@ -21,26 +21,36 @@
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
-          <h3 class="masthead-brand">Cover</h3>
+          <h3 class="masthead-brand">LiteSend</h3>
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Contact</a>
           </nav>
         </div>
       </header>
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">Cover your page.</h1>
-        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-        <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-        </p>
+        <h1 class="cover-heading">A simple way to receive Litecoin from other people.</h1>
+        <p class="lead">Just enter your wallet address and an amount to start receiving!</p>
+        <div class="form-group">
+          <label for="walletAddressInput">Wallet Address</label>
+          <input type="text" class="form-control" id="walletAddressInput" placeholder="LUcTWqzgLhg6r7JmiwyvDrgjrnPLqJq4Nt">
+        </div>
+
+        <div class="form-group">
+          <label for="walletAddressInput">Amount</label>
+          <input type="text" class="form-control" id="amountInput" placeholder="0.03365427">
+        </div>
+
+        <div class="form-group">
+          <label for="walletAddressInput">Your LiteSend URL</label>
+          <input type="text" class="form-control" id="URL" placeholder="0.03365427" readonly="readonly">
+        </div>
+
       </main>
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+          <p>Developed by JCZ Studios</p>
         </div>
       </footer>
     </div>
@@ -50,8 +60,9 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../../../dist/js/bootstrap.min.js"></script>
+    <script>window.jQuery || document.write('<script src="vendor/bootstrap-4.0.0/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="vendor/bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
