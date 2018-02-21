@@ -6,17 +6,17 @@ $(document).ready(function() {
 		var reason = $('#reasonInput').val();
 		var urlString = 'https://jczstudios.github.io/litesend/recieve.html?address=' + wallet + '&amount=' + amount + '&reason=' + reason;
 		var url = new URL(urlString);
-		$('#URL').val(url.href);
-		return url;
+		return url.href;
 	}
 	$('input').on('input', function() {
-		updateAddress();
+		var url = updateAddress();
+		$('#URL').val(url);
 	});
 	$('#URL').on('click', function () {
 	   $(this).select();
 	});
 	$('#shortenURL').on('click', function() {
-		var url = updateAddress().href;
+		var url = updateAddress();
 
 		var settings = {
 		  "async": true,
@@ -33,7 +33,7 @@ $(document).ready(function() {
 		}
 
 		$.ajax(settings).done(function (response) {
-		  console.log(response.longUrl);
+			$('#URL').val(response.id);
 		});
 	});
 });
