@@ -4,7 +4,7 @@ $(document).ready(function() {
 		var amount = $('#amountInput').val();
 		var name = $('#nameInput').val();
 		var reason = $('#reasonInput').val();
-		var url = 'https://jczstudios.github.io/litesend/recieve.html?address=' + wallet + '&amount=' + amount + '&name=' + name + '&reason=' + reason;
+		var url = 'https://jczstudios.github.io/litesend/recieve.html?address=' + wallet + '&amount=' + amount + '&reason=' + reason;
 		$('#URL').val(url);
 	}
 	$('input').on('input', function() {

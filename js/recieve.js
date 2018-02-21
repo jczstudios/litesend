@@ -5,19 +5,19 @@ $(document).ready(function() {
 	var amount = url.searchParams.get("amount");
 	var reason = url.searchParams.get("reason");
 
-	if (header == '') {
+	if (header === null || header === '') {
 		header = 'Litecoin has been requested!';
 	} else {
 		header += ' is requesting Litecoin.';
 	}
 
-	if (amount == '') {
+	if (amount === null || amount === '') {
 		amount = 'Please send any amount to the address below.'
 	} else {
 		amount = 'Please send ' + amount + ' LTC to the address below.'
 	}
 
-	if (!(reason == '')) {
+	if (!(reason === '' || reason === null)) {
 		$('#reason-block').removeClass('d-none');
 	}
 
