@@ -3,7 +3,8 @@ $(document).ready(function() {
 		var wallet = $('#walletAddressInput').val();
 		var amount = $('#amountInput').val();
 		var name = $('#nameInput').val();
-		var url = 'https://jczstudios.github.io/litesend/recieve.html?address=' + wallet + '&amount=' + amount + '&name=' + name;
+		var reason = $('#reasonInput').val();
+		var url = 'https://jczstudios.github.io/litesend/recieve.html?address=' + wallet + '&amount=' + amount + '&name=' + name + '&reason=' + reason;
 		$('#URL').val(url);
 	}
 	$('input').on('input', function() {
