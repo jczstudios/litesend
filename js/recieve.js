@@ -24,5 +24,9 @@ $(document).ready(function() {
 	$('#reason').text(reason);
 	$('#header').text(header);
 	$('#amount').text(amount);
-	$('#walletAddress').val(address);	
+	$('#walletAddress').val(address);
+
+	$('#walletAddress').on('click', function () {
+	   $(this).select();
+	});
 });
