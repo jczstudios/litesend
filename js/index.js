@@ -4,8 +4,10 @@ $(document).ready(function() {
 		var amount = $('#amountInput').val();
 		var name = $('#nameInput').val();
 		var reason = $('#reasonInput').val();
-		var url = 'https://jczstudios.github.io/litesend/recieve.html?address=' + wallet + '&amount=' + amount + '&reason=' + reason;
-		$('#URL').val(url);
+		var urlString = 'https://jczstudios.github.io/litesend/recieve.html?address=' + wallet + '&amount=' + amount + '&reason=' + reason;
+		var url = new URL(urlString);
+
+		$('#URL').val(url.href);
 	}
 	$('input').on('input', function() {
 		updateAddress();
