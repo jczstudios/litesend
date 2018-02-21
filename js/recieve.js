@@ -1,5 +1,14 @@
 $(document).ready(function() {
 	var url = new URL(window.location);
 	var address = url.searchParams.get("address");
-	console.log(address);
+	var name = url.searchParams.get("name");
+	var amount = url.searchParams.get("amount");
+
+	if (name == '') {
+		name = 'Someone'
+	}
+
+	$('#name').text(name);
+	$('#amount').text()
+	$('#walletAddress').val(address);	
 });
