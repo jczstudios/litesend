@@ -9,6 +9,6 @@ $(document).ready(function() {
 	}
 
 	$('#name').text(name);
-	$('#amount').text()
+	$('#amount').text(amount);
 	$('#walletAddress').val(address);	
 });
