@@ -6,9 +6,7 @@ $(document).ready(function() {
 		var reason = $('#reasonInput').val();
 		var urlString = 'https://jczstudios.github.io/litesend/recieve.html?address=' + wallet + '&amount=' + amount + '&reason=' + reason;
 		var url = new URL(urlString);
-
 		$('#URL').val(url.href);
-		console.log(url.href)
 	}
 	$('input').on('input', function() {
 		updateAddress();
